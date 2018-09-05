@@ -1,0 +1,21 @@
+{
+    "name": "dbilovd/rpn-calc",
+    "description": "RPN Calculator",
+    "type": "project",
+    "require": {
+    },
+    "autoload" : {
+        "psr-4" : {
+            "RPN\\" : "src/",
+            "Tests\\" : "tests/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Lartey",
+            "email": "dbilovd@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
