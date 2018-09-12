@@ -54,4 +54,16 @@ class TestOperandStack extends TestCase
 		$this->os->pop();
 		$this->assertSame($this->os->peek(), $valueOne);
 	}
+
+	/** @test */
+	public function givenTwoValuesInStack_whenReplacedTop_thenValueOnTop_shouldBeLatestValue ()
+	{
+		$valueOne = 3;
+		$valueTwo = 6;
+		$valueThree = 9;
+		$this->os->push($valueOne);
+		$this->os->push($valueTwo);
+		$this->os->replaceTop($valueThree);
+		$this->assertSame($this->os->peek(), $valueThree);
+	}
 }

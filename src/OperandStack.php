@@ -30,7 +30,7 @@ class OperandStack
 	}
 
 	/**
-	 * REturning value at the top of the stack of elements
+	 * Returning value at the top of the stack of elements
 	 * That is the value latest value added
 	 *
 	 * @return Mixed
@@ -58,5 +58,15 @@ class OperandStack
 		}
 
 		return array_pop($this->stack);
+	}
+
+	/**
+	 * Replace Top
+	 * 
+	 * @return Void
+	 */
+	public function replaceTop ()
+	{
+		
 	}
 }

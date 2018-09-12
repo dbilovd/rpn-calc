@@ -31,4 +31,5 @@ class TestCalculator extends TestCase
 		$accuumulator = $calculator->getAccumulator();
 		$this->assertEquals(3, $accuumulator);
 	}
+
 }
