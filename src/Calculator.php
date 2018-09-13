@@ -4,28 +4,20 @@ namespace RPN;
 
 class Calculator
 {
-	private $accumulator = null;
-	private $stack = [];
+	protected $strategy;
+
 
 	public function __construct ()
 	{
-		$this->setAccumulator(0);
 	}
 
-	public function getAccumulator ()
+	/**
+	 * Run calculation
+	 *
+	 * @return Integer 
+	 */
+	public function calculate ($firstValue, $secondValue)
 	{
-		return $this->accumulator != null ?: 0;
-	}
-
-	protected function setAccumulator ($value)
-	{
-		$this->accumulator = $value;
-	}
-
-	public function addElement ($value)
-	{
-		// Move acculator value to stack
-
-		// Set new accumulator
+		$this->strategy->performOperation($firstValue, $secondValue);
 	}
 }
